@@ -45,4 +45,13 @@ class AudioPlayerManager(private val context: Context) {
     fun release() {
         player.release()
     }
+
+    fun skipForward(ms: Long = 10_000L) {
+        player.seekTo(player.currentPosition + ms)
+    }
+
+    fun skipBackward(ms: Long = 10_000L) {
+        player.seekTo((player.currentPosition - ms).coerceAtLeast(0))
+    }
+
 }

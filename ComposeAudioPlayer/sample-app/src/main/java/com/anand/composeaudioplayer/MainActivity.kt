@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
                         title = "SoundHelix Song",
                         artist = "SoundHelix"
                     ),
-                    playerManager = playerManager
+                    audioPlayerManager = playerManager
                 )
             }
         }

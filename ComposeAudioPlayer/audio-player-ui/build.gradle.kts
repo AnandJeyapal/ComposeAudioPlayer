@@ -42,9 +42,13 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
 
-    implementation(project(":audio-player-core"))
+    api(project(":audio-player-core"))
     implementation("androidx.compose.ui:ui:1.6.2")
     implementation("androidx.compose.material3:material3:1.2.1")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.7.0")
+    implementation("androidx.media3:media3-exoplayer:1.3.1")
+    implementation("androidx.media3:media3-common:1.3.1")
+    implementation("androidx.compose.material:material-icons-extended:1.6.2")
+
 
 }
